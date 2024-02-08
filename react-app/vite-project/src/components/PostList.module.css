@@ -1,0 +1,6 @@
+.posts {
+    list-style: none;
+    flex-basis: 200px;
+    display: flex;
+    gap: 10px;
+}
