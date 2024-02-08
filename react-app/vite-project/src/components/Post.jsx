@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+
 import classes from './Post.module.css'
 
-// eslint-disable-next-line react/prop-types
-function Post({id, author, body}) {
+function Post({ id, author, body }) {
     return (
         <li className={classes.post}>
             <Link to={id}>
@@ -11,6 +12,12 @@ function Post({id, author, body}) {
             </Link>
         </li>
     )     
+}
+
+Post.propTypes = {
+    id: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
+    body: PropTypes.string.isRequired,
 }
 
 export default Post;

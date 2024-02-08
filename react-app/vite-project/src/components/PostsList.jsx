@@ -1,8 +1,8 @@
 import { useLoaderData } from 'react-router-dom';
+
 import Post from './Post.jsx'
 import classes from './PostList.module.css'
 
-// eslint-disable-next-line react/prop-types
 function PostsList() {
     const posts = useLoaderData();
    

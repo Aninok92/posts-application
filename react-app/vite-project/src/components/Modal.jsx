@@ -1,8 +1,8 @@
+import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom'
 
 import classes from './Modal.module.css'
 
-// eslint-disable-next-line react/prop-types
 function Modal({ children }) {
     const navigate = useNavigate()
 
@@ -17,5 +17,9 @@ function Modal({ children }) {
         </>
     )
 }
+
+Modal.propTypes = {
+    children: PropTypes.node.isRequired,
+};
 
 export default Modal

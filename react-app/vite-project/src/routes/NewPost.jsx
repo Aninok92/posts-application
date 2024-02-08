@@ -1,16 +1,15 @@
 import { useNavigate, Form, redirect } from 'react-router-dom';
 
-import Modal from '../components/Modal';
+import { Modal } from '../components';
+
 import classes from './NewPost.module.css'
 
-// eslint-disable-next-line react/prop-types
 function NewPost(){
     const navigate = useNavigate();
 
     function closeHandler() {
         navigate('..')
     }
-
 
     return (
         <Modal>
